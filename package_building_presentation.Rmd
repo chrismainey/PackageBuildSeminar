@@ -1,0 +1,73 @@
+---
+title: "Package Building"
+subtitle: "with RStudio tools"
+author: "Chris Mainey"
+date: "2020/08/30 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    seal: false
+---
+
+class: right
+
+background-image: "./man/figures/leone-venter-mTkXSSScrzw-unsplash.jpg"
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.width=10, fig.height=6, fig.align = "center", dpi=300,
+                      dev.args = list(png = list(type = "cairo")), fig.retina=3) 
+library(Cairo)
+```
+
+
+<br><br><br>
+<br><br>
+
+# Why and how to build an R package
+
+<br><br>
+
+chris.mainey@uhb.nhs.uk `r icon::fa("envelope")` 
+
+[mainard.co.uk](https://www.mainard.co.uk) `r icon::fa("globe")` 
+
+[github.com/chrismainey](https://github.com/chrismainey) `r icon::fa("github")` 
+
+[twitter.com/chrismainey](https://twitter.com/chrismainey) `r icon::fa("twitter")` 
+
+
+
+
+<br><br><br>
+<br><br><br><br>
+
+<img src="man/figures/iceberg.jpg" align="middle">
+
+
+]
+
+
+---
+
+# Overview
+
+My PhD work focused on modelling incident reporting in the NHS.
+
+
+Webinar will cover:
+
++ What is 'patient safety' and 'incident reporting'?
++ Overview of text mining
++ Introduce the `tidytext` package and approach
++ Introduce topic models
++ Show how this has been applied to incident reporting to:
+ + Visualise preparation
+ + Visualise terms in reports
+ + Model topics
+ + Use topics to predict harm-level of incident report
