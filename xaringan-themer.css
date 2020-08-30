@@ -26,7 +26,9 @@ body {
   font-family: 'Open Sans', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
   font-weight: normal;
   color: #18273F;
+  
 }
+
 h1, h2, h3 {
   font-family: 'Open Sans';
   font-weight: normal;
@@ -103,11 +105,13 @@ strong{color:#23395b;}
     color: #E9EBEE;
   }
   .title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
-    color: #E9EBEE;
+    color: black
   }
   .title-slide {
-    background-color: #23395b;
-      
+    background-image: url(https://raw.githubusercontent.com/chrismainey/PackageBuildSeminar/master/man/figures/leone-venter-mTkXSSScrzw-unsplash.jpg);
+    background-size: cover;
+    color: black;
+    
       
       
   }

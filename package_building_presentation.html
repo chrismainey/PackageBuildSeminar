@@ -10,18 +10,15 @@
   <body>
     <textarea id="source">
 
-
-class: right
-
-background-image: "./man/figures/leone-venter-mTkXSSScrzw-unsplash.jpg"
+class: title-slide right
 
 
 
 
 &lt;br&gt;&lt;br&gt;&lt;br&gt;
-&lt;br&gt;&lt;br&gt;
-
 # Why and how to build an R package
+
+#### Chris Mainey - Univeristy Hosptials Birmingham NHS FT
 
 &lt;br&gt;&lt;br&gt;
 
@@ -34,35 +31,109 @@ chris.mainey@uhb.nhs.uk <i class="fas  fa-envelope "></i>
 [twitter.com/chrismainey](https://twitter.com/chrismainey) <i class="fab  fa-twitter "></i> 
 
 
-
-
-&lt;br&gt;&lt;br&gt;&lt;br&gt;
-&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
-
-&lt;img src="man/figures/iceberg.jpg" align="middle"&gt;
-
-
-]
-
-
 ---
 
 # Overview
 
-My PhD work focused on modelling incident reporting in the NHS.
-
-
 Webinar will cover:
 
-+ What is 'patient safety' and 'incident reporting'?
-+ Overview of text mining
-+ Introduce the `tidytext` package and approach
-+ Introduce topic models
-+ Show how this has been applied to incident reporting to:
- + Visualise preparation
- + Visualise terms in reports
- + Model topics
- + Use topics to predict harm-level of incident report
++ What is an R package and why might you want to build one
+--
+
++ Functions
+--
+
++ Package basic structures and concepts
+--
+
++ Roxygen2 documentation and vignettes
+--
+
++ Dependencies
+--
+
++ Build and check
+--
+
++ Extras:
+ + Source control (Git and GitHub)
+ + Unit Tests and code coverage
+ + Releasing to CRAN
+
+--
+
+__We'll look at this practically by building an R package__
+
+
+References:
++ [Hadley Wickham, Jenny Bryan's: Building R packages](https://r-pkgs.org/)
++ [`R` official Documentation](https://cran.r-project.org/doc/manuals/R-exts.html#Creating-R-packages)
+
+---
+ 
+# R packages
+
++ We use packages all the time (base, stats, utils), and `R` is built on them.
++ `R` package repostiory CRAN has xxxxxxxxx packages at time of writing
++ Other places like Bioconductor, source pacakges on GitHub etc.
+
+You've probably installed `tidyverse`, `dplyr`, `ggplot2` or other popular packages
+
+--
+
++ __What are they?__
+ + Collections of functions related to certain workflows and task
+ + Up to the author what goes in
+ + Can be depend on other packages or be written
+--
+
++ __Why use them?__
+ + Don't reinvent the wheel!
+ + Do you know how to do [Insert thing] better than an expert?
+--
+
++ __Why build a package?__
+ + You might be the expert!
+ + You can share your code with colleagues, or others, adn build collaboratively.
+
+---
+
+# But I can't build one...
+
+__...yes you can.__  You don't need perfect code to share it (as you'll see from mine)
+
++ You can get much of the background by following today and looking online.
++ We need to convert our code to a `function`
++ Need to consider as generic input and output
+
+.pull-left[
+
+### You have code like this:
+
+
+```r
+mydataframe$new_col &lt;-
+  mydataframe$new_col + 2.5 / 50 
+```
+]
+
+.pull-right[
+
+### Turn it into a function:
+
+
+```r
+my_function &lt;- function(col){
+  new_col &lt;- col + 2.5 / 50 
+  return(col)
+}
+```
+]
+
+Function has:
++ A name (`my_function`)
++ An input (`cols`, can be applied to any column/vector in this case)
++ A return value (by default, returns the last line, but can be explicit with `return()`)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
