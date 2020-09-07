@@ -109,13 +109,9 @@ __...yes you can!__  You don't need perfect code to share it
 + We need to convert our code to a `function`.
 + Need to consider as generic input and output.
 
-+ __Function has:__
- + A name (`my_function`)
- + An input (`cols`)
- + A return value (by default, returns the last line, but can be explicit with `return()`)
-
 ]
 
+--
 
 .pull-right[
 
@@ -139,6 +135,28 @@ my_function &lt;- function(col){
 ]
 
 ---
+# Functions
+
+.pull-left[
++ __Function has:__
+ + A name (`my_function`)
+ + An input (`cols`)
+ + A return value (by default, returns the last line, but can be explicit with `return()`)
+]
+
+.pull-right[
+### Turn it into a function:
+
+
+```r
+my_function &lt;- function(col){
+  new_col &lt;- col + 2.5 / 50 
+  return(col)
+}
+```
+]
+
+---
 
 ## Structure of a package
 
@@ -148,6 +166,7 @@ Can contain one or many functions.  The parts it requires are:
 + NAMESPACE - A short-hand file so are can undestand what functions and dependencies package has
 + Function(s) - Files with `R` functions, saved in a directro called `R`
 + Help files - Text describing functions.  We'll generate this with `Roxygen2`
+
 
 Optional:
 + Vignette - Worked examples of using your functions.  I think all good packages should have at least one.
@@ -181,6 +200,7 @@ You no longer need `Depends` since NAMESPACE files are used, and `LinkingTo` can
 
 Refer to Jim Hester's post: https://www.tidyverse.org/blog/2019/05/itdepends/
 
+
 __Beware of tidyverse dependencies!__  Hadley's advice:  
 
 &gt;Because the tidyverse is a set of packages designed for interactive data analysis, this is, in short, a bad idea. The tidyverse package includes a substantial number of direct and indirect dependencies (79 packages, as of this writing), many of which are likely unnecessary for the purposes of your package. Furthermore, the CRAN maintainers frown upon depending on it, which can cause hassle for you down the line.
@@ -201,6 +221,7 @@ __Beware of tidyverse dependencies!__  Hadley's advice:
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
+"ratio": "16:9",
 "highlightStyle": "github",
 "highlightLines": true,
 "countIncrementalSlides": false
