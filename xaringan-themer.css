@@ -55,11 +55,13 @@ ul {
 
 blockquote {
   font-style: italic;
-  font-size: 16px;
+  font-size: 18px;
 }
 .remark-slide-content {
+  background-image: url(https://raw.githubusercontent.com/chrismainey/PackageBuildSeminar/master/man/figures/leone-venter-mTkXSSScrzw-unsplash.jpg)
   background-color: #E9EBEE;
-    font-size: 20px;
+  
+    font-size: 21px;
 }
 
 li{
@@ -143,7 +145,7 @@ strong{color:#23395b;}
   }
   /* Two-column layout */
     .left-column {
-      width: 20%;
+      width: 48%;
       height: 92%;
       float: left;
     }
@@ -154,7 +156,7 @@ strong{color:#23395b;}
     color: #23395b;
   }
   .right-column {
-    width: 75%;
+    width: 48%;
     float: right;
     padding-top: 1em;
   }

@@ -28,11 +28,14 @@ library(Cairo)
 <br><br><br>
 # Why and how to build an R package
 
-#### Chris Mainey - Univeristy Hosptials Birmingham NHS FT
+#### Chris Mainey - Healthcare Evaluation Data (HED)
+#### Univeristy Hosptials Birmingham NHS FT
 
-<br><br>
+<br>
 
 [chris.mainey@uhb.nhs.uk](mailto:chris.mainey@uhb.nhs.uk) `r icon::fa("envelope")` 
+
+[HED.nhs.uk](https://www.hed.nhs.uk) `r icon::fa("globe")` 
 
 [mainard.co.uk](https://www.mainard.co.uk) `r icon::fa("globe")` 
 
@@ -44,8 +47,6 @@ library(Cairo)
 ---
 
 # Overview
-
-Webinar will cover:
 
 + What is an R package and why might you want to build one
 --
@@ -83,7 +84,7 @@ __References:__
  
 # R packages
 
-+ We use packages all the time (base, stats, utils), and you probably know `tidyverse`, `dplyr`, `ggplot2`.
++ Use packages all the time (base, stats, utils). You probably know `tidyverse`, `dplyr`, `ggplot2`.
 + `R` package repository CRAN has 16181 packages at time of writing.
 + Other places like Bioconductor, source pacakges on GitHub etc.
 --
@@ -111,35 +112,58 @@ __References:__
 
 # But I can't build one...
 
-.pull-left[
-
-__...yes you can!__  You don't need perfect code to share it
+--
+.left-column[
+__...yes you can!__  You don't need perfect code to share it!  _As you'll see from mine..._
+<br><br>
 
 + You can get much of the background today and by looking online.
 + We need to convert our code to a `function`.
-+ Need to consider as generic input and output.
+
++ Functions need to consider generic inputs and outputs.
 
 ]
 
 --
 
-.pull-right[
-
+.right-column[
 ### You have code like this:
-
 ```{r orig, eval=FALSE}
-
 mydataframe$new_col <-
-  mydataframe$new_col + 2.5 / 50 
+  (mydataframe$old_col + 2.5) / 50 
+```
+]
+---
+
+# But I can't build one...
+
+.left-column[
+__...yes you can!__  You don't need perfect code to share it!  _As you'll see from mine..._
+<br><br>
+
++ You can get much of the background today and by looking online.
++ We need to convert our code to a `function`.
+
++ Functions need to consider generic inputs and outputs.
+
+]
+
+
+.right-column[
+### You have code like this:
+```{r orig2, eval=FALSE}
+mydataframe$new_col <-
+  (mydataframe$old_col + 2.5) / 50 
 ```
 
 ### Turn it into a function:
-
-```{r asfunc, eval=FALSE}
+```{r asfunc2}
 my_function <- function(col){
-  new_col <- col + 2.5 / 50 
-  return(col)
+  new_col <- (col + 2.5) / 50 
+  return(new_col)
 }
+
+my_function(97.5)
 ```
 ]
 
@@ -151,15 +175,34 @@ my_function <- function(col){
  + A name (`my_function`)
  + An input (`cols`)
  + A return value (by default, returns the last line, but can be explicit with `return()`)
+
+]
+
+
+---
+# Functions
+
+.pull-left[
++ __Function has:__
+ + A name (`my_function`)
+ + An input (`cols`)
+ + A return value (by default, returns the last line, but can be explicit with `return()`)
+
+<br><br>
+
+It's these functions that we use, and often chain together to build packages.
+We need to:
++ Document them, including help files
++ Tell `R` whether they depend on any other files/packages
+
 ]
 
 .pull-right[
-### Turn it into a function:
 
-```{r asfunc2, eval=FALSE}
+```{r asfunc3, eval=FALSE}
 my_function <- function(col){
   new_col <- col + 2.5 / 50 
-  return(col)
+  return(new_col)
 }
 ```
 ]
