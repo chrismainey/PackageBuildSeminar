@@ -58,10 +58,11 @@ blockquote {
   font-size: 18px;
 }
 .remark-slide-content {
-  background-image: url(https://raw.githubusercontent.com/chrismainey/PackageBuildSeminar/master/man/figures/leone-venter-mTkXSSScrzw-unsplash.jpg)
+  background-position: right top;
+  background-image: url("./man/figures/Picture1.png");
+  background-size: 15%;
   background-color: #E9EBEE;
-  
-    font-size: 21px;
+  font-size: 21px;
 }
 
 li{
