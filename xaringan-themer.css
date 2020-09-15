@@ -26,7 +26,7 @@ body {
   font-family: 'Open Sans', 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Microsoft YaHei', 'Songti SC', serif;
   font-weight: normal;
   color: #18273F;
-  
+    
 }
 
 h1, h2, h3 {
@@ -36,21 +36,21 @@ h1, h2, h3 {
 }
 
 p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 0.25em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 0.25em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 0.25em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0.25em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
 blockquote {
@@ -62,7 +62,7 @@ blockquote {
   background-image: url("./man/figures/Picture1.png");
   background-size: 15%;
   background-color: #E9EBEE;
-  font-size: 21px;
+    font-size: 21px;
 }
 
 li{
@@ -80,6 +80,7 @@ li{
 }
 .remark-code, .remark-inline-code {
   font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;
+  background-color: #F8F8F8;
 }
 .remark-code {
   font-size: 0.8em;
@@ -98,7 +99,7 @@ li{
 }
 strong{color:#23395b;}
     a, a > code {
-      color: #23395b;
+      color:#0077CC;
         text-decoration: none;
     }
   
@@ -134,12 +135,12 @@ strong{color:#23395b;}
     color: black
   }
   .title-slide {
-    background-image: url(https://raw.githubusercontent.com/chrismainey/PackageBuildSeminar/master/man/figures/leone-venter-mTkXSSScrzw-unsplash.jpg);
+    background-image: url(./man/figures/leone-venter-mTkXSSScrzw-unsplash.jpg);
     background-size: cover;
     color: black;
     
-      
-      
+    
+    
   }
   .title-slide .remark-slide-number {
     display: none;
