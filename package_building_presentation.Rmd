@@ -34,15 +34,15 @@ library(Cairo)
 
 <br>
 
-[chris.mainey@uhb.nhs.uk](mailto:chris.mainey@uhb.nhs.uk) `r icon::fa("envelope")` 
+[chris.mainey@uhb.nhs.uk](mailto:chris.mainey@uhb.nhs.uk) `r icon::fontawesome("envelope")` 
 
-[HED.nhs.uk](https://www.hed.nhs.uk) `r icon::fa("globe")` 
+[HED.nhs.uk](https://www.hed.nhs.uk) `r icon::fontawesome("globe")` 
 
-[mainard.co.uk](https://www.mainard.co.uk) `r icon::fa("globe")` 
+[mainard.co.uk](https://www.mainard.co.uk) `r icon::fontawesome("globe")` 
 
-[github.com/chrismainey](https://github.com/chrismainey) `r icon::fa("github")` 
+[github.com/chrismainey](https://github.com/chrismainey) `r icon::fontawesome("github")` 
 
-[twitter.com/chrismainey](https://twitter.com/chrismainey) `r icon::fa("twitter")` 
+[twitter.com/chrismainey](https://twitter.com/chrismainey) `r icon::fontawesome("twitter")` 
 
 .footnote[
 Background image by Leone Venter: https://unsplash.com/@fempreneurstyledstock
@@ -103,6 +103,8 @@ __References:__
 
 ---
 # But I can't build one...
+
+--
 
 .pull-left[
 __...yes you can!__  You don't need perfect code to share it!  _As you'll see from mine..._
@@ -364,4 +366,3 @@ https://github.com/chrismainey/FunnelPlotR
 + Can build to binary and install from zip
 
 + GitHub, CI, codecov and `pkgdown` can all help with process
-
