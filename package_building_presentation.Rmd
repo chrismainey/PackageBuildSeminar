@@ -29,20 +29,18 @@ library(Cairo)
 <br><br><br>
 # Why and how to build an R package
 
-#### Chris Mainey - Healthcare Evaluation Data (HED)
-#### University Hospitals Birmingham NHS FT
+#### Chris Mainey
+#### NHS North Central London ICB
 
-<br>
+<br><br>
 
-[chris.mainey@uhb.nhs.uk](mailto:chris.mainey@uhb.nhs.uk) `r icon::fontawesome("envelope")` 
+[c.mainey1@nhs.net](mailto:c.mainey1@nhs.net) `r icons::fontawesome("envelope")` 
 
-[HED.nhs.uk](https://www.hed.nhs.uk) `r icon::fontawesome("globe")` 
+[mainard.co.uk](https://www.mainard.co.uk) `r icons::fontawesome("globe")` 
 
-[mainard.co.uk](https://www.mainard.co.uk) `r icon::fontawesome("globe")` 
+[github.com/chrismainey](https://github.com/chrismainey/Training_Package_Building) `r icons::fontawesome("github")` 
 
-[github.com/chrismainey](https://github.com/chrismainey) `r icon::fontawesome("github")` 
-
-[twitter.com/chrismainey](https://twitter.com/chrismainey) `r icon::fontawesome("twitter")` 
+[twitter.com/chrismainey](https://twitter.com/chrismainey) `r icons::fontawesome("twitter")` 
 
 .footnote[
 Background image by Leone Venter: https://unsplash.com/@fempreneurstyledstock
@@ -342,14 +340,12 @@ https://github.com/chrismainey/brilliant2
 class: middle
 
 # Look at an existing package:
-https://github.com/chrismainey/FunnelPlotR
+https://github.com/nhs-r-community/FunnelPlotR
 
 ---
 # Summary
 
-+ Packages are ways to make functions portable
-
-+ Help you share code, collaborate and make code available to non-experts
++ Packages are ways to make functions portable, heling you share and collaborate
 
 + Rstudio gives you package templates, and integrated with build, check and other tools
 
@@ -357,12 +353,12 @@ https://github.com/chrismainey/FunnelPlotR
 
 + NAMESPACE contains import/dependency details, generated in build in `RStudio`/`devtools`/`roxygen2`
 
-+ `R` functions saved in R folder, document using `roxygen2`
++ `R` functions saved in R folder, document then using `roxygen2`
 
-+ Unit test check code is working properly (`testthat` package)
++ Unit tests check code is working properly (`testthat` package)
 
 + Build (using RTools in Windows). If releasing to CRAN, use checks with `--as-cran` option.
 
-+ Can build to binary and install from zip
++ Can build to binary and install locally from a ZIPfrom zip
 
 + GitHub, CI, codecov and `pkgdown` can all help with process
